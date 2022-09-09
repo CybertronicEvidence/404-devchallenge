@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Space Mono', monospace;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    flex: 1;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: -3px;
+}
+
+.container{
+    max-width: 1800px;
+    margin-left: auto;
+    padding-left: 100px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-right: 10px;
+    height: 80vh;
+}
+.col-1{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-1 img{
+    max-width: 80%;
+    padding: 0;
+}
+h1{
+    font-size: 65px;
+    padding-right: 50px;
+    line-height: 100px;
+    color: #333;
+}
+p{
+    font-size: 30px;
+    padding-top: 50px;
+    color: #555;
+    padding-right: 250px;
+}
+button{
+    color: #fff;
+    background-color: #000;
+    border: 0px solid;
+    font-size: 14px;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    padding: 30px 50px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+footer{
+    text-align: center;
+    color: #555;
+    font-size: 12px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+a{
+    color: #555;
+}
+span{
+    cursor: pointer;
+}
+
+/*---- media query for less than 600px screen size ----*/
+@media only screen and (max-width: 600px){
+    .row{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        padding: 0;
+    }
+    .col-1{
+        flex-basis: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .col-1 img{
+        max-width: fit-content;
+        height: 250px;
+        margin-left: 60px;
+        margin-top: 30px;
+    }
+    h1{
+        padding: 0;
+        margin-left: 20px;
+        font-size: 40px;
+        line-height: 1.5;
+        margin-right: 10px;
+    }
+    p{
+        padding: 0;
+        margin-left: 20px;
+        font-size: 18px;
+    }
+    button{
+        padding: 15px 25px;
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    footer, a{
+        color: #888;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    p{
+        padding: 0;
+        margin-right: 20px;
+        font-size: 24px;
+    }
+    h1{
+        padding: 10px;
+        font-size: 45px;
+        line-height: 75px;
+    }
+    .col-1 img{
+        max-width: 100%;
+    } 
+    button{
+        padding: 10px 20px;
+    }
+}
